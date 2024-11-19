@@ -12,23 +12,48 @@
     />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
-  <body class="d-flex bg-success justify-content-center mt-3">
-    <div
-      class="card mb-3 justify-content-center border border-radius border-3 border-dark"
-      style="width: 370px; height:500px;"
-    >
+  <body class="bg-success">
+    <div class="container d-flex justify-content-center mt-3">
       <div
-        id="simboloArriba"
-        class="card-header text-start p-4 bg-transparent border border-0"
-      ></div>
-      <div
-        id="numero"
-        class="card-body text center p-4 bg-transparent d-flex align-items-center justify-content-center"
-      ></div>
-      <div
-        id="simboloAbajo"
-        class="card-footer p-4 bg-transparent border border-0"
-      ></div>
+        id="carta"
+        class="card mb-3 justify-content-center border border-radius border-3 border-dark"
+        style="width: 270px; height:400px;"
+      >
+        <div
+          id="simboloArriba"
+          class="card-header text-start p-2 bg-transparent border border-0"
+        ></div>
+        <div
+          id="numero"
+          class="card-body text center p-2 bg-transparent d-flex align-items-center justify-content-center"
+        ></div>
+        <div
+          id="simboloAbajo"
+          class="card-footer p-2 bg-transparent border border-0"
+        ></div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="text-center fs-3">
+        <strong> Change the size of your card! </strong>
+      </p>
+      <div id="input" class="input-group mb-3">
+        <input
+          id="inputWidth"
+          type="number"
+          class="form-control"
+          placeholder="Card's width"
+        />
+        <input
+          id="inputHeight"
+          type="number"
+          class="form-control"
+          placeholder="Card's height"
+        />
+        <button id="button" type="button" class="btn btn-danger">
+          Card default size
+        </button>
+      </div>
     </div>
   </body>
 </html>
